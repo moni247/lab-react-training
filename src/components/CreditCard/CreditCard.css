@@ -1,0 +1,12 @@
+.creditCard {
+    width: 370px;
+    height: 220px;
+    border-radius: 10px;
+    margin-left: 100px;
+    padding-left: 10px;
+}
+
+.credit {
+    display: flex;
+    flex-wrap: wrap;
+}
