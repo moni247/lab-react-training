@@ -6,12 +6,11 @@ const Rating = ({ children }) => {
 
     let ratings = ""
 
-    children === 0 ? '☆☆☆☆☆' : undefined
-    children === 1 ? '★☆☆☆☆' : undefined
-    children === 2 ? '★★☆☆☆' : undefined
-    children === 3 ? '★★★☆☆' : undefined
-    children === 4 ? '★★★★☆' : undefined
-    children === 4 ? '★★★★★' : undefined
+    { children < 0.5 ? '☆☆☆☆☆' : undefined }
+    { children >= 1.5 ? '★☆☆☆☆' : undefined }
+    { children >= 2.5 ? '★★☆☆☆' : undefined }
+    { children >= 3.5 ? '★★★☆☆' : undefined }
+    { children >= 4.5 ? '★★★★☆' : undefined }
 
     return ratings
 }
